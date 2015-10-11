@@ -1,0 +1,23 @@
+/*Your styles can go here.*/
+
+form input {
+    background-color: yellow;
+
+}
+
+input[name="lastname"] {
+    font-weight: bold;
+}
+
+p {
+    border: 2px solid #ddd;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+input {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+}
+

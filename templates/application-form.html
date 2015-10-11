@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}Skills-Web{% endblock %}
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Skills-Web</title>
+    <link rel="stylesheet" href="/static/styles.css"> -->
+<!--    <style>
+        form input {
+            background-color: yellow;
+
+        }
+
+        input[name="lastname"] {
+            font-weight: bold;
+        }
+
+        p {
+            border: 2px solid #ddd;
+            display: inline;
+        }
+    </style> -->
+<!-- </head>
+
+<body>
+ -->
+{% block content %}
+    
+ <h2>Application Form</h2>
+    <p>Please complete the following application. All fields are required.
+    </p><br><br>
+    <form action="/application" method="POST">
+        <label>First Name
+            <input type="text" name="firstname" placeholder="First Name" value="">
+        </label>
+        <label>Last Name
+            <input type="text" name="lastname" placeholder="Last Name" value="">
+        </label>
+        <label>Salary Desired (in US$)
+            <input type="text" name="salary" placeholder="90000" value="">
+        </label>
+        <label>Position Sought
+            <select name="job-title">
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="QA Engineer">QA Engineer</option>
+                <option value="Product Manager">Product Manager</option>
+            </select>
+        </label>
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}
+
+<!-- </body>
+</html> -->
